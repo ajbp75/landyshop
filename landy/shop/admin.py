@@ -15,7 +15,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ('title','price','discount_price','category','description','image')
     search_fields = ('description',)
     actions = ('change_category_to_default',)
-    fields = ('title','price',)ude
+    fields = ('title','price',)
     list_editable = ('price','category',)
 
 class OrderAdmin(admin.ModelAdmin):
